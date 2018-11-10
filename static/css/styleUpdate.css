@@ -256,9 +256,6 @@ a.navbar-brand {
     .postDetails .showcase1 .preview {
         height: 50px;
     }
-    .metaContent {
-	width: 200px;
-    }
 }
 
 @media (max-width: 325px) {
