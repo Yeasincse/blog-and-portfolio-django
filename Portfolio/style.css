@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:800|Nunito');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.skewed-bottom {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  border-width: 80px 900px;
+  border-color: transparent transparent #EDEDED transparent;
+  border-style: solid;
+}
+.skewed-top {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 50px;
+  border-width: 80px 670px 0px 670px;
+  border-color: transparent #111111 transparent #111111;
+  border-style: solid;
+}
+.skewed {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 50px;
+  border-width: 70px 1000px 0px 450px;
+  border-color: transparent #111111 transparent #111111;
+  border-style: solid;
+}
+
+body, .wrapper {
+  width: 100%;
+  height: 100%;
+  font-family: "Nunito";
+  position: relative;
+}
+
+.showcase {
+  background-image: url('images/image1.jpg');
+  width: 100%;
+  height: 650px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.content-heading {
+  color: rgb(33, 35, 44);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content-heading h1 {
+  font-size: 2.8rem;
+  font-family: 'Montserrat';
+}
+
+.main-body {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+section.sec1 {
+  background-color: #111111;
+  padding-bottom: 5rem;
+}
+section.sec2 {
+  background-color: #EDEDED;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 5rem;
+}
+
+.sec1 h1, .sec2 h1 {
+  font-size: 3rem;
+  font-family: "Montserrat";
+  text-transform: capitalize;
+}
+
+.about .photo {
+  border: 20px dashed #181818;
+  width: 80%;
+}
+.about img {
+  width: 100%;
+  height: auto;
+}
+.about p {
+  text-align: justify;
+  line-height: 1.7;
+}
+
+.experience .container {
+  margin-bottom: 10rem;
+}
+.experience .skills {
+  width: 80%;
+  height: 100%;
+  margin: 30px auto;
+}
+.experience .box {
+  width: 20%;
+  float: left;
+}
+.experience .box1 {
+  width: 33.33%;
+  float: left;
+}
+.experience .box .chart, .experience .box1 .chart {
+  position: relative;
+  width: 125px;
+  height: 125px;
+  margin: 15px auto;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 125px;
+}
+.experience .box canvas, .experience .box1 canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.experience ul {
+  width: 100%;
+  padding: 1rem 0;
+}
+.experience ul li {
+  width: 50%;
+}
+.experience .tab-content h2 {
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+.experience .nav-link {
+  color: white;
+}
+.experience .nav-link:hover {
+  color: rgb(255, 255, 140);
+}
+
+.services i {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+.services h3 {
+  font-size: 1.2rem;
+}
+
+.myWork .container{
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+}
+.myWork .thumbnails {
+  width: 100%;
+  padding: 0;
+  border: 3px dashed rgb(24, 19, 46);
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 400ms ease;
+}
+.myWork .thumbnails:hover {
+  transform: scale(0.95);
+}
+.myWork img {
+  width: 100%;
+  height: 230px;
+}
+.myWork .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: cursive;
+  font-weight: bold;
+}
+.myWork .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5 ease;
+  background-color:rgba(50, 146, 125, 0.726);
+  padding: 0;
+  margin: 0;
+}
+.myWork .thumbnails:hover .overlay {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.article img {
+  height: 200px;
+}
+.article h5 {
+  font-weight: bold;
+}
+.article .thumbnails a {
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.contact {
+  padding-bottom: rem;
+}
+.contact .btn {
+  width: 329px;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.contact p {
+  font-size: 0.7rem;
+}
+
+.footer {
+  width: 100%;
+}
+.footer ul {
+  width: 60%;
+  margin: 2rem auto;
+  list-style: none;
+  text-align: center;
+}
+.footer ul li {
+  display: inline-block;
+  padding: 0 0.5rem;
+}
+.footer ul li a {
+  color: white;
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: all 400ms ease;
+}
+.footer ul li a:hover {
+  background: white;
+  color: #181818;
+  transform: scale(1.1);
+}
+
+.facebook { background-color: #4267B2; }
+.linkedin { background-color: #0077B5; }
+.github { background-color: black; }
+.bitbucket { background-color: #0747A6; }
